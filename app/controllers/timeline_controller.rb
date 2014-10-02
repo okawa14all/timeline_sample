@@ -193,8 +193,6 @@ class TimelineController < UIViewController
     puts "------------ cell_height_of #{post.objectId}"
     text = post['text']
 
-    attrs = { NSFontAttributeName: UIFont.systemFontOfSize(18) }
-
     modified_size = text.boundingRectWithSize(
       CGSizeMake(rmq.stylesheet.text_width, Float::MAX),
       options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine,
