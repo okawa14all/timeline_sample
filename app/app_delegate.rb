@@ -9,11 +9,11 @@ class AppDelegate
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
 
     # tab 1
-    @timeline_controller = TimelineController.alloc.initWithNibName(nil, bundle: nil)
+    @timeline_controller = TimelineController.new
     tab1_controller = UINavigationController.alloc.initWithRootViewController(@timeline_controller)
 
     # tab 2
-    @members_controller = MembersController.alloc.initWithNibName(nil, bundle: nil)
+    @members_controller = MembersController.new
     tab2_controller = UINavigationController.alloc.initWithRootViewController(@members_controller)
 
     @tab_controller = UITabBarController.new
