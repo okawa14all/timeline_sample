@@ -96,7 +96,10 @@ class TimelineController < UIViewController
   end
 
   def open_post_detail_controller(post)
-    puts 'open_post_detail_controller'
+    controller = PostDetailController.new
+    controller.post = post
+    nav_controller = UINavigationController.alloc.initWithRootViewController(controller)
+    self.presentViewController(nav_controller, animated:true, completion:nil)
   end
 
   def open_login_controller

@@ -57,6 +57,7 @@ Motion::Project::App.setup do |app|
     # pod 'Parse-iOS-SDK' http://stackoverflow.com/questions/25575606/where-is-pffacebookutils-framework-on-cocoapods-repo
     pod 'FontAwesomeKit/IonIcons'
     pod 'MONActivityIndicatorView'
+    pod 'SlackTextViewController'
   end
 
   app.info_plist['UIViewControllerBasedStatusBarAppearance'] = false
